@@ -8,17 +8,38 @@ import mysql.connector as MYSQL
 app = Flask(__name__)
 CORS(app)
 
-ovocie = ["jablko","pomaranc","jahoda"]
+orders = [
+          {
+          "car_type": "sedan",
+          "car_brand": "skoda",
+          "car_model": "octavia",
+          "problem": "auto nestartuje",
+          "first_name": "Amanda",
+          "last_name": "Green",
+          "tel_number": "0912345678",
+          "email": "green@gmail.com"     
+          },
+          {
+          "car_type": "hatchbag",
+          "car_brand": "volkswagen",
+          "car_model": "passat",
+          "problem": "nejdu stierace",
+          "first_name": "feri",
+          "last_name": "zhrabovca",
+          "tel_number": "09128521",
+          "email": "feri@gmail.com"     
+          }
+          ]
 
 @app.route("/", methods=["GET"])
 def main():
-    return jsonify({"ovocie":ovocie}),200
+  return jsonify(orders),200
 
 @app.route("/vytvorit", methods=["POST"])
 def create():
     data = request.get_json(force=True)
     data_dict = dict(data)
-    ovocie.append(data_dict["vytvorit"])
+    orders.append(data_dict)
     return jsonify("created"),201
 
 @app.route("/upravit/<id>", methods=["PUT"])
@@ -30,7 +51,7 @@ def update(id):
 
 @app.route("/vymazat/<id>", methods=["DELETE"])
 def delete(id):
-    del ovocie[int(id)]
+    del orders[int(id)]
     return jsonify("deleted"),204
 
 if __name__ == "__main__":
