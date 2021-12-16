@@ -12,7 +12,7 @@ orders = [
           {
           "car_type": "sedan",
           "car_brand": "skoda",
-          "car_model": "octavia",
+          "car_model": "fabia",
           "problem": "auto nestartuje",
           "first_name": "Amanda",
           "last_name": "Green",
