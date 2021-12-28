@@ -1,0 +1,1 @@
+SELECT * FROM Car LEFT JOIN Owner ON Car.owner_id = Owner.id

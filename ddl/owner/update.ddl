@@ -1,0 +1,1 @@
+UPDATE Owner SET id={}, name='{}', surname='{}', phone='{}', email='{}' WHERE id={}

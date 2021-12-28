@@ -1,0 +1,1 @@
+SELECT id, phone FROM Owner

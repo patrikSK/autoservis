@@ -1,0 +1,1 @@
+DELETE FROM Car WHERE id='{}'

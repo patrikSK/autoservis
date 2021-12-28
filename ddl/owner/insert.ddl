@@ -1,0 +1,1 @@
+INSERT INTO Owner(id, name, surname, phone, email) values('{}','{}','{}','{}','{}')

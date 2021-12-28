@@ -1,0 +1,1 @@
+UPDATE Car SET id={}, type='{}', brand='{}', model='{}', problem='{}', owner_id='{}' WHERE id={}

@@ -1,0 +1,1 @@
+INSERT INTO Car(date, type, brand, model, problem, owner_id) values(CURRENT_DATE(),'{}','{}','{}','{}','{}')
