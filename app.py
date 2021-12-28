@@ -132,4 +132,5 @@ def delete(id):
   return jsonify("delete"),204
 
 
-app.run()
+if __name__ == "__main__":
+    app.run()
