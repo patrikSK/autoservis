@@ -66,6 +66,7 @@
 *Method:* `PUT`
 
 *URL* : `https://autoservis.herokuapp.com/updateOrder/<id>`
+id => car_id
 
 *Success Response:*
   
@@ -96,6 +97,7 @@
 *Method:* `DELETE`
 
 *URL* : `https://autoservis.herokuapp.com/deleteOrder/<id>`
+id => car_id
 
 *Success Response:*
   
