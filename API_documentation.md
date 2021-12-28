@@ -4,7 +4,7 @@
 
 *Method:* `GET`
 
-*URL* : `/GetOrders`
+*URL* : `https://autoservis.herokuapp.com/getOrders`
 
 *Success Response:*
   
@@ -36,7 +36,7 @@
 
 *Method:* `POST`
 
-*URL* : `/createOrder`
+*URL* : `https://autoservis.herokuapp.com/createOrder`
 
 *Success Response:*
   
@@ -65,7 +65,7 @@
 
 *Method:* `PUT`
 
-*URL* : `/updateOrder/<id>`
+*URL* : `https://autoservis.herokuapp.com/updateOrder/<id>`
 
 *Success Response:*
   
@@ -95,7 +95,7 @@
 
 *Method:* `DELETE`
 
-*URL* : `/deleteOrder/<id>`
+*URL* : `https://autoservis.herokuapp.com/deleteOrder/<id>`
 
 *Success Response:*
   
